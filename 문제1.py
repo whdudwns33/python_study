@@ -48,21 +48,24 @@ age = (current_year - (int(year) + 1900))
 print(f"year : {year}")
 print(f"month : {month}")
 print(f"day : {day}")
-
 if bool(int(gender)) == 1 :
     print("남성")
 else :
     print("여성")
-
 print(f"age : {age}")
 
-# 4. 갯수가 정해지지 않은 여러개의 정수 입력 받아서 합계와 평균 구하기
-num = list(map(int, input("숫자를 입력 하시오 :").split())) # i는 요소 하나하나를 계산함.
-sum = 0
-for i in num:
-    sum += int(i)
-print(sum)
 
-# lenth = len(list)
-# while True :
-#     sum += int(num[i])
+# 4. 갯수가 정해지지 않은 여러개의 정수 입력 받아서 합계와 평균 구하기
+num = list(map(int, input("숫자를 입력 하시오 :").split()))  # input은 문자열이니까 int형으로 변형해주고 map()으로 하나하나 저장해서 리스트에 대입
+sum1 = 0
+cnt = 0
+for i in num:   # i는 요소 하나하나를 계산함.
+    sum1 += int(i)
+print(sum1)
+print(sum1/len(num))
+
+while True :
+    sum += num[cnt]
+
+print(sum(num))
+print(sum(num)/len(num))
