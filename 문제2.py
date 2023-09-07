@@ -19,17 +19,21 @@ else:
 # 주간근무[1] 야간근무[2]
 # 근무시간
 # # 입력한 시간 동안 근무한 급여는 ---원 입니다.
-t1, t2 = map(int,input("근무시간을 입력하시오: [1] 주간 [2] 야간").split())
-if t1 > 0: # 주간 근무
-    day_pay = t1 * 9620
-    if t2 > 0: # 주간 및 야간
-        night_pay = t2*9620*1.5
-        print(f"주/야간 급여 : {day_pay + night_pay}")
-    else: # 야간은 안함
-        print(f"주간 급여 : {day_pay}")
-else: #주간은 안함
-    night_pay = t2 * 9620 * 1.5
-    print(f"야간 급여 : {night_pay}")
+while t1 >= 0 and t2 >= 0:
+    t1, t2 = map(int,input("근무시간을 입력하시오: [1] 주간 [2] 야간").split())
+    if t1 > 0: # 주간 근무
+        day_pay = t1 * 9620
+        if t2 > 0: # 주간 및 야간
+            night_pay = t2*9620*1.5
+            print(f"주/야간 급여 : {day_pay + night_pay}")
+            break
+        else: # 야간은 안함
+            print(f"주간 급여 : {day_pay}")
+            break
+    else: #주간은 안함
+        night_pay = t2 * 9620 * 1.5
+        print(f"야간 급여 : {night_pay}")
+        break
 
 
 # 3. 문자열 추가하기.
