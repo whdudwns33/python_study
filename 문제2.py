@@ -12,6 +12,7 @@ else:
     else:
         print(n2)
 
+
 # 2. 주/야간 근무시간을 입력 받아 아르바이트 급여 계산하기
 # 주간: 9620
 # 야간: 주간 * 1.5
@@ -29,6 +30,8 @@ if t1 > 0: # 주간 근무
 else: #주간은 안함
     night_pay = t2 * 9620 * 1.5
     print(f"야간 급여 : {night_pay}")
+
+
 # 3. 문자열 추가하기.
 # 2개의 문자열을 포인터 변수 s, k에
 # 양의 정수를 정수형 변수 n에 각각 전달 받아 s열 문자 뒷 부분에 n개의 문자를 k열 앞까지
@@ -36,7 +39,7 @@ else: #주간은 안함
 # s: seoul
 # k: korea
 # n : 2
-# 결과 : seoul--korea
+# 결과 : ulkorea
 s = "seoul"
 k = "korea"
 n = int(input("정수 입력: "))
