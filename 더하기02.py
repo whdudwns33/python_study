@@ -1,5 +1,4 @@
 n = int(input())
 for i in range(n) :
-    n1 = int(input())
-    n2 = int(input())
-    print(f"Case #{i+1}: {n1+n2}")
+    arr = list(map(int, input().split()))
+    print(f"Case #{i+1}: {arr[1] + arr[2]}")
