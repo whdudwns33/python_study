@@ -1,7 +1,4 @@
 N = int(input())
-arr = []
-for i in range(N):
-    n = int(input())
-    arr.append(n)
+list = list(map(int,input().split()))
 v = int(input())
-print(arr.count(v))
+print(list.count(v))
