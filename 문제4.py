@@ -4,8 +4,9 @@ for i in range(m):
     s = []
     n = []
     n = list(map(int,input().split()))
-    average = sum(n) / len(n)
+    average = sum(n[1:]) / len(n[1:])
     for e in n :
         if e > average:
             s.append(e)
-    print(f"{(len(s) / len(n)) * 100} %")
+    print()
+    print(f"{((len(s) / len(n[1:])) * 100):.3f} %")
