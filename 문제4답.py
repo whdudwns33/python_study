@@ -21,4 +21,6 @@ rst = []            #각 case에 대한 결과값을 받기 위한 리스트
 for i in range(n):  #총 테스트 횟수만큼 반복 수행
     rst.append(over_rate())
 
+for e in rst:
+    print(f"{e:.3f}%")
 
