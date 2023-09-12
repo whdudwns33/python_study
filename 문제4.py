@@ -14,4 +14,5 @@ for i in range(m):
     for e in n :
         if e > average:
             s.append(e)
+    print()
     print(f"{((len(s) / len(n[1:])) * 100):.3f} %")
