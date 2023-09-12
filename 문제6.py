@@ -16,6 +16,6 @@ bem = b / (price * n)
 
 
 if price > b:
-    print((A // (price - b)) + 1)
+    print((A / (price - b)) + 1)
 else:
     print(-1)

@@ -5,23 +5,16 @@ A, b, price = map(int, input().split())
 n = 1
 bem = b / (price * n)
 
-
 #
-# while True:
-#     if price * n < A + (b * n) :
-#         n += 1
-#     elif price * n >= A + (b * n) :
-#         print(n + 1)
+# while True :
+#     if (n > A//(price - b)):
 #         break
-#     else:
-#         print(-1)
+#     n += 1
+# print(n)
 
+if price > b:
+    print((A // (price - b)) + 1)
+else:
+    print(-1)
 
-while True:
-    if price > b:
-        print((A // (price - b)) + 1)
-        break
-    else:
-        print(-1)
-        break
 
