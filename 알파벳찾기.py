@@ -21,7 +21,7 @@
 s = input()
 a = "abcdefghijklmnopqrstuvwxyz"
 for e in a:
-    print(s.find(e), end= " ")
+    print(s.find(e), end= " ")  # a가 s를 순회하면서 없으면 -1, 해당 알파벳이 있으면 s의 해당 알파벳의 배열 번호를 출력
 
 
 
