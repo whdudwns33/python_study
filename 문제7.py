@@ -1,5 +1,6 @@
 # 배수 찾기
 n = int(input())
+ls = []
 while True:
     m = int(input())
     if m % n == 0:
