@@ -2,18 +2,28 @@
 # ad
 # a => 0,
 # 0, -1, -1, +1
-alp = []
-ch = [] * 26
-rst = [-1]*26
-s = list(input())
-# ord() 문자열을 아스키 코드로 변환
-for i in range(97, 123):
-    alp.append(chr(i))
-# print(ord(s[0]))
+# alp = []
+# ch = [] * 26
+# rst = [-1]*26
+# s = list(input())
+#
+# # ord() 문자열을 아스키 코드로 변환
+# for i in range(97, 123):
+#     alp.append(chr(i))
+# # print(ord(s[0]))
+#
+# for i in range(len(s)):
+#     if s[i] in alp:
+#         a = (ord(alp[ord(s[i]) - 97]) - 97)
+#         rst[ord(s[i])-97] = a
+# print(rst)
 
-for i in range(len(s)):
-    if alp.:
-        rst[]
+s = input()
+a = "abcdefghijklmnopqrstuvwxyz"
+for e in a:
+    print(s.find(e), end= " ")
+
+
 
 
 
