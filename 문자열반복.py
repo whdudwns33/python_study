@@ -1,5 +1,4 @@
 m = int(input())
-
 for i in range(m):
     r, s = map(str, input().split())
     S = list(s[:])
