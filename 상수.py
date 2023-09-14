@@ -7,10 +7,3 @@ for e in n1:
 print(max(int(number1),int(number2)))
 
 
-
-# if int(num1) > int(num2):
-#     print(num1)
-# elif int(num1 < int(num2)):
-#     print(num2)
-# else:
-#     print(f"{num1} = {num2}")
