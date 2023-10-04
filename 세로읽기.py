@@ -1,19 +1,15 @@
 word = []
+rst = []
 for i in range(5):
     word.append(list(input()))
-a = []
-for i in range(len(word)):
-    a.append(len(word[i]))
-rst = []
-for i in range(max(a)):
-    for j in range(max(a)):
-        if len(word[j]) < i:
-            word[j].append("*")
-        else:
-            rst.append(word[j][i])
+
+for i in range(6):
+    for j in range(len(word)):
+        if len(word[j]) <= 6:
+            word[j].append("")
+        rst.append(word[j][i])
+rst = "".join(rst)
 print(rst)
-
-
 
 # AABCDD
 # afzz
