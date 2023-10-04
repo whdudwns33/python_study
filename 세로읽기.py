@@ -8,6 +8,7 @@ for i in range(6):
         if len(word[j]) <= 6:
             word[j].append("")
         rst.append(word[j][i])
+
 rst = "".join(rst)
 print(rst)
 
@@ -17,7 +18,5 @@ print(rst)
 # a8EWg6
 # P5h3kx
 
-# rst = "".join(list)
-# print(rst.replace("*", ""))
 
 
