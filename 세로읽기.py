@@ -7,9 +7,10 @@ for i in range(len(word)):
 rst = []
 for i in range(max(a)):
     for j in range(max(a)):
-        if len(word[j]) <= max(a):
+        if len(word[j]) < i:
             word[j].append("*")
-        rst.append(word[j][i])
+        else:
+            rst.append(word[j][i])
 print(rst)
 
 
